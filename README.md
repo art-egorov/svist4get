@@ -55,7 +55,7 @@ Old [Issues page](https://bitbucket.org/artegorov/svist4get/issues) from bitbuck
 
 ## Image example
 
-![](docs/0.svg)
+
 <img src="docs/figs/0.png" width="360px">
 
 
