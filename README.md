@@ -48,13 +48,16 @@ python3 -m pip install -e .
 
 ## Contact
 
-Please contact us by e-mail _artyom**dot**egorov**AT**belozersky**dot**msu**dot**ru_ or use [Issues](https://bitbucket.org/artegorov/svist4get/issues) to report any technical problems.
+Please contact us by e-mail _artyom**dot**egorov**AT**belozersky**dot**msu**dot**ru_ or use Issues to report any technical problems.  
+Old [Issues page](https://bitbucket.org/artegorov/svist4get/issues) from bitbucket.
 
 ---
 
 ## Image example
 
 ![](docs/0.svg)
+<img src="docs/figs/0.png" width="360px">
+
 
 
 ##### Console commands to reproduce the above image
