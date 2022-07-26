@@ -63,9 +63,7 @@ svist4get --sampledata
 ```
 
 ```
-svist4get -bg svist4get_data/RiboCov_cut.bedGraph svist4get_data/mRNACov_cut.bedGraph \
--gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.dna.fa \ 
--bl Ribo-Seq RNA-Seq -w I 108842 113506 -it "CCR4 and FUN26 genes" -rc -c A4_p1
+svist4get -bg svist4get_data/RiboCov_cut.bedGraph svist4get_data/mRNACov_cut.bedGraph -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.dna.fa -bl Ribo-Seq RNA-Seq -w I 108842 113506 -it "CCR4 and FUN26 genes" -rc -c A4_p1
 ```
 
 ## Reference
