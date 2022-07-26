@@ -13,8 +13,10 @@ Svist4get is a simple bioinformatics tool for visualization of genomic signal tr
 **OS:** Linux, Mac OS  
 **Python dependencies:** reportlab, statistics, biopython, configs, wand, argparse, pybedtools  
 **OS-level dependencies:** bedtools, ImageMagick (pdf-to-png conversion)  
-**License:** [WTFPL](http://www.wtfpl.net)
+**License:** [WTFPL](http://www.wtfpl.net)  
+**Version:** 1.3 (July 2022)
 
+**Note:** It's a new project's home page. It was moved from [bitbucket: artegorov/svist4get](https://bitbucket.org/artegorov/svist4get/src/master/). All new releases (starting with v. 1.3) of svist4get will be published only on this page (and pypi). 
 
 ## Installation
 
@@ -29,7 +31,7 @@ You need those tools at the OS level (probably installable as Linux packages):
 python3 -m pip install svist4get
 ```
 
-- The development version is available at bitbucket :
+- The development version is available at github :
 
 ```
 git clone https://artegorov@bitbucket.org/artegorov/svist4get.git
@@ -44,7 +46,7 @@ python3 -m pip install -e .
 
 ## Contact
 
-Please contact us by e-mail _artyom**dot**egorov**AT**belozersky**dot**msu**dot**ru_ or use Issues to report any technical problems.  
+Please contact us by e-mail _artem**dot**egorov**AT**med**dot**lu**dot**se_ or use Issues to report any technical problems.  
 Old [Issues page](https://bitbucket.org/artegorov/svist4get/issues) from bitbucket.
 
 
@@ -71,9 +73,7 @@ svist4get -bg svist4get_data/RiboCov_cut.bedGraph svist4get_data/mRNACov_cut.bed
 If you find svist4get useful, please cite:
 
 
-Artyom A. Egorov, Ekaterina A. Sakharova, Aleksandra S. Anisimova, Sergey E. Dmitriev, Vadim N. Gladyshev and Ivan V. Kulakovskiy,  
-**svist4get: a simple visualization tool for genomic tracks from sequencing experiments,**  
-*BMC Bioinformatics, Volume 20, 2019, 113, [doi: 10.1186/s12859-019-2706-8](https://doi.org/10.1186/s12859-019-2706-8)*
+Artyom A. Egorov, Ekaterina A. Sakharova, Aleksandra S. Anisimova, Sergey E. Dmitriev, Vadim N. Gladyshev and Ivan V. Kulakovskiy, **svist4get: a simple visualization tool for genomic tracks from sequencing experiments,** *BMC Bioinformatics, Volume 20, 2019, 113, [doi: 10.1186/s12859-019-2706-8](https://doi.org/10.1186/s12859-019-2706-8)*
 
 
 
@@ -100,7 +100,7 @@ Artyom A. Egorov, Ekaterina A. Sakharova, Aleksandra S. Anisimova, Sergey E. Dmi
 
 ## Authors
 
-svist4get is developed by Artyom Egorov _artem**dot**egorov**AT**med**dot**lu**dot**se_ at the Laboratory of Systems Biology of Aging, MSU (Current address: [The Atkinson Lab](https://atkinson-lab.com), Department of Experimental Medical Science, Lund University). We are open for suggestions to extend and improve svist4get functionality. Please don't hesitate to share your ideas or feature requests.
+svist4get is developed by Artyom Egorov at the Laboratory of Systems Biology of Aging, MSU (Current address: [The Atkinson Lab](https://atkinson-lab.com), Department of Experimental Medical Science, Lund University). We are open for suggestions to extend and improve svist4get functionality. Please don't hesitate to share your ideas or feature requests.
 
  *svist4get logo drawn by E. Kulakovskaya based on puppy named Cindy of [S. Anisimova](https://scholar.google.ru/citations?user=4GJj7S0AAAAJ&hl=en)
 
