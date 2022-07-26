@@ -1,4 +1,5 @@
-![](docs/logo_128.png)  
+
+<img src="docs/logo_256.png" width="150px">
 
 ***
 
@@ -14,7 +15,6 @@ Svist4get is a simple bioinformatics tool for visualization of genomic signal tr
 **Python dependencies:** reportlab, statistics, biopython, configs, wand, argparse, pybedtools  
 **OS-level dependencies:** bedtools, ImageMagick (pdf-to-png conversion)  
 **License:** [WTFPL](http://www.wtfpl.net)
-
 
 ---
 
