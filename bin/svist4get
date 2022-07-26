@@ -1,0 +1,160 @@
+#!/usr/bin/python3
+
+
+
+import svist4get.data_processing as data_processing
+import svist4get.drawing as drawing
+import svist4get.methods as methods
+import svist4get.manager as manager
+import svist4get.copier as copier
+import sys
+import traceback
+
+try:
+
+    s_aa_track = 0
+    parameters = manager.Parameters()
+    parameters.parse_command_line()
+    parameters.load_config(parameters.cmd['path_to_config'])
+    parameters.load_palette()
+    parameters.load_triplet_code()
+    parameters.load_font()
+    parameters.update_config()
+    parameters.create_pdf()
+
+
+    if parameters.config['data']:
+        copier.copy()
+        sys.exit()
+
+    if parameters.config['transcript_id'] == 0 and parameters.config['gene_id'] == 0 and parameters.config['window'] == [0]:
+        raise methods.Svist4getError('Mandatory parameter -t or -g or -w is missing. Please consult the program manual or use -h.')
+
+    if parameters.config['fasta_file'] == 0:
+        raise methods.Svist4getError('Parameter -fa missing. Please consult the program manual or use -h.')
+
+
+  #  if parameters.config['gtf_file'] == 0:
+  #      raise methods.Svist4getError('Mandatory parameter -gtf is missing. Please consult the program manual or use -h.')
+
+
+    if len(parameters.config['genomic_intervals']) != len(parameters.config['genomic_intervals_label']) and parameters.config['genomic_intervals_label'] != '' :
+        raise methods.Svist4getError('Number of -gi and -gil parameters must be equal. Please consult the program manual or use -h.')
+
+
+
+    gtf = data_processing.Gtf_helper(parameters.config['gtf_file'])
+
+    if parameters.config['gene_id'] != 0:
+        coordinates = gtf.extract_window_from_gene_id(parameters.config['gene_id'])
+
+        parameters.config['window'] = coordinates
+
+    if parameters.config['window'][0] != 0 and parameters.config['window'][0] != 'tis' and parameters.config['window'][
+            0] != 'tss':
+        coordinates = parameters.config['window']
+        transcripts = gtf.extract_transcripts_from_widnow(*coordinates, parameters.config['selected_transcripts'])
+        if len(transcripts) <= 1:
+            s_aa_track = 1
+        data_from_gtf = (gtf.extract_data_about_transcripts(transcripts))
+
+    elif parameters.config['window'][0] == 'tis' or parameters.config['window'][0] == 'tss':
+        data_from_gtf = gtf.extract_data_around_ts(parameters.config['transcript_id'], parameters.config['window'],
+                                                       parameters.config['selected_transcripts'])
+        s_aa_track = 1
+
+    else:
+        data_from_gtf = (gtf.extract_data_about_transcripts(parameters.config['transcript_id']))
+        s_aa_track = 1
+
+    parameters.add_gtf_data(data_from_gtf)
+
+    tracks = []
+
+    if parameters.config['show_title']:
+        Title = manager.Title_tracks_maker(parameters)
+        tracks += Title.create_tracks()
+
+    if parameters.config['show_genomic_axis']:
+        Axis_tics = manager.Axis_tics_tracks_maker(parameters)
+        tracks += Axis_tics.create_tracks()
+
+    Vgrid = manager.Vgrid_tracks_maker(parameters)
+    tracks += Vgrid.create_tracks()
+
+    start = parameters.gtf['start']
+    end = parameters.gtf['end']
+
+
+    if (parameters.config['page_width']) < 7 and (parameters.config['show_nt_seq_track'] == 'auto'):
+        parameters.config['show_nt_seq_track'] = 0
+
+    if (parameters.config['show_nt_seq_track'] == 'auto' and (end - start) < 160) or parameters.config['show_nt_seq_track'] == 1:
+        parameters.config['show_nt_seq_track'] = 1
+    else:
+        parameters.config['show_nt_seq_track'] = 0
+
+
+
+
+
+
+    Transcript_struct = manager.Transcript_struct_tracks_maker(parameters)
+    tracks += Transcript_struct.create_tracks()
+
+
+
+    if parameters.config['show_nt_seq_track'] != 0:
+        Nt_seq = manager.Nt_seq_tracks_maker(parameters)
+        tracks += Nt_seq.create_tracks()
+
+
+    if parameters.config['paired_bedgraph'] != []:
+        Paired_bedgraph = manager.Paired_bedgraph_tracks_maker(parameters)
+        tracks += Paired_bedgraph.create_tracks()
+
+
+    if parameters.config['bedgraph'] != '':
+        Bedgraph = manager.Bedgraph_tracks_maker(parameters)
+        tracks += Bedgraph.create_tracks()
+
+
+    Regions = manager.Genomic_intervals_tracks_maker(parameters)
+    tracks += Regions.create_tracks()
+
+    if parameters.config['show_aa_seq_track'] == 'auto' and s_aa_track == 1:
+        parameters.config['show_aa_seq_track'] = 1
+
+
+
+
+    if parameters.config['show_aa_seq_track'] == 1:
+        Aa_seq = manager.Aa_seq_tracks_maker(parameters)
+        tracks += Aa_seq.create_tracks()
+
+
+
+
+    graph = manager.Image(tracks, parameters)
+
+    graph.go()
+
+
+    if parameters.config['highlight_frame'] != 0:
+        graph.highlighting_the_frame()
+
+
+    graph.save()
+
+    methods.pdf_page_to_png(parameters)
+
+except Exception as e:
+
+        if parameters.cmd['debug']:
+            traceback.print_exc()
+        else:
+
+            for i in ((traceback.format_exc()).split('\n')):
+                if 'Svist4getError:' in i:
+                    i = i.split(':')
+                    print('Svist4getError: ' + i[1])

@@ -1,0 +1,17 @@
+brightorange =  #FF8300
+magenta = #FF00FF
+red = #F15854
+orange = #FAA43A
+yellow = #DECF3F
+green = #60BD68
+blue = #5DA5DA
+pink = #F17CB0
+purple = #B276B2
+brown = #B2912F
+lightgray = #AAAAAA
+gray = #4D4D4D
+deepred = #B22222
+deepgreen = #556B2F
+black = #000000
+
+

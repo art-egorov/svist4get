@@ -1,0 +1,32 @@
+svist4get 1.2.3
+_____________________________
+[POST-INSTALL EXAMPLE DATA]
+--sampledata
+_____________________________
+[MANDATORY ARGUMENTS]
+-t <id> OR -g <id> OR -t <id> -w tss|tis <upstream> <downstream> 
+OR -w <contig> <start> <end>
+-fa <file.fa> ; -gtf <file.gtf>
+_____________________________
+[OPTIONAL ARGUMENTS]
+-bg <file1.bedGraph> [<file2.bedGraph>...]
+-pbg <file1A.bedGraph file1A.bedGraph> [ -pbg <file2A.bedGraph file2B.bedGrap>...]
+-c <path> |A4_p1|A4_p2|A4_l ; -o <name> 
+-hi ; -rc ; -bgb mean|median|max|min|none
+-bg_log ; -nts ; -aas auto|tics|codons
+-it <text> ; -xs <N> ; -lb <N1> [<N2>..]
+-ys <N1> [<N2>...] ; -bul <N1> <N2>... | max ; -bll <N1> <N2>... | min
+-bl <tex1t> <text2>  ; -bgc <color1>[color2>..]; -blp left|center|right
+-gi <s-e> [<s1-e1>...] ; -gil <tex1t> <text2>...
+-gic <color1>[<color2>..] ; -st <transcript_id1> <transcript_id2>...
+-tl <transcript_id> <label> ; -hrf <N> 
+-tls auto|both|id|name|gene_id|none
+_____________________________
+[MISCELLANEOUS ARGUMENTS]
+-h, --help ; -v, --version ; --debug
+-hf <x1> <x2> <label> ; -hc <NtNtNt>
+--verbose
+
+Use -h, --help for detailed help message
+
+
