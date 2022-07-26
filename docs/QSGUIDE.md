@@ -19,7 +19,7 @@ svist4get -sampledata
 svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.dna.fa -bg svist4get_data/RiboCov_cut.bedGraph -t YFL031W
 ```
 
-<img src="docs/figs/1.png" width="700px">
+<img src="figs/1.png" width="700px">
 
 
 ###### Example with optional arguments
@@ -32,7 +32,7 @@ svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.d
 -hi -hrf 0 -c A4_p1
 ```
 
-<img src="docs/figs/2.png" width="400px">
+<img src="figs/2.png" width="400px">
 
 
 ---
@@ -44,7 +44,7 @@ svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.d
 ```
 
 
-<img src="docs/figs/3.png" width="700px">
+<img src="figs/3.png" width="700px">
 
 
 ---
@@ -54,7 +54,7 @@ svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.d
 svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.dna.fa -bg svist4get_data/RiboProElong_cut.bedGraph svist4get_data/RiboCov_cut.bedGraph svist4get_data/mRNACov_cut.bedGraph -bl 'A-Site Ribo-Seq' 'Coverage Ribo-Seq' 'RNA-Seq' -g YFL031W -it 'Gene HAC1' -hf 75839 76091 intron -c svist4get_data/A4_p1.cfg -o HAC1
 ```
 
-<img src="docs/figs/4.png" width="400px">
+<img src="figs/4.png" width="400px">
 
 ---
 ## An arbitrary genomic window
@@ -63,7 +63,7 @@ svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.d
 svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.dna.fa -bg svist4get_data/RiboProElong_cut.bedGraph svist4get_data/RiboCov_cut.bedGraph svist4get_data/mRNACov_cut.bedGraph -bl 'A-Site Ribo-Seq' 'Coverage Ribo-Seq' 'RNA-Seq' -w I 108842 113506 -it 'CCR4 and FUN26 genes' -rc  -c svist4get_data/A4_p1.cfg
 ```
 
-<img src="docs/figs/5.png" width="400px">
+<img src="figs/5.png" width="400px">
 
 ---
 ## Usage of paired bedGraph tracks
@@ -73,7 +73,7 @@ svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.d
 svist4get -gtf svist4get_data/MATa.gtf -fa svist4get_data/MATa.fasta -pbg svist4get_data/mata_ribo1_plus.bedGraph svist4get_data/mata_ribo1_minus.bedGraph -pbg svist4get_data/mata_ribo2_plus.bedGraph svist4get_data/mata_ribo2_minus.bedGraph -pbg svist4get_data/mata_rna1_plus.bedGraph svist4get_data/mata_rna1_minus.bedGraph -pbg svist4get_data/mata_rna2_plus.bedGraph svist4get_data/mata_rna2_minus.bedGraph -w V01313.1 390 2430 -rc -it 'MAT locus of MATa yeast strain' -bl 'Ribo-Seq (sample1)' 'Ribo-Seq(sample2)' 'RNA-Seq (sample1)' 'RNA-Seq (sample2)' -bgc brightorange brightorange purple purple -c svist4get_data/alt_A4_p1.cfg -hf 1224 1305 ' ' -hf 1533 1638 'Translated open reading frames' -hf 1692 1932 ' '
 ```
 
-<img src="docs/figs/6.png" width="400px">
+<img src="figs/6.png" width="400px">
 
 ___
 
