@@ -56,7 +56,7 @@ sv4g.methods.pdf_page_to_png(pa)
 
 ```
 
-![](2.svg)
+<img src="figs/2.png" width="400px">
 
 
 ---
@@ -110,7 +110,8 @@ sv4g.manager.Image(tracks, pa).draw()
 sv4g.methods.pdf_page_to_png(pa)
 
 ```
-![](3.svg)
+
+<img src="figs/3.png" width="700px">
 
 ---
 ## Gene-centric selection of a genomic window
@@ -160,7 +161,7 @@ sv4g.methods.pdf_page_to_png(pa)
 
 ```
 
-![](4.svg)
+<img src="figs/4.png" width="400px">
 
 ---
 ## An arbitrary genomic window
@@ -208,7 +209,7 @@ sv4g.methods.pdf_page_to_png(pa)
 
 ```
 
-![](5.svg)
+<img src="figs/5.png" width="400px">
 
 
 ---
@@ -265,7 +266,7 @@ sv4g.methods.pdf_page_to_png(pa)
 
 ```
 
-![](6.svg)
+<img src="figs/6.png" width="400px">
 
 ---
 ### [Main page](../README.md)

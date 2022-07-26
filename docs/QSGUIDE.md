@@ -26,10 +26,7 @@ svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.d
 
 
 ```
-svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.dna.fa \ 
--bg svist4get_data/RiboProElong_cut.bedGraph svist4get_data/RiboCov_cut.bedGraph svist4get_data/mRNACov_cut.bedGraph \ 
--t YFL031W -it 'Gene HAC1' -bl 'A-Site Ribo-Seq' 'Coverage Ribo-Seq' 'RNA-Seq' \
--hi -hrf 0 -c A4_p1
+svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.dna.fa -bg svist4get_data/RiboProElong_cut.bedGraph svist4get_data/RiboCov_cut.bedGraph svist4get_data/mRNACov_cut.bedGraph -t YFL031W -it 'Gene HAC1' -bl 'A-Site Ribo-Seq' 'Coverage Ribo-Seq' 'RNA-Seq' -hi -hrf 0 -c A4_p1
 ```
 
 <img src="figs/2.png" width="400px">
