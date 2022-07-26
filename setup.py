@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
       long_description = fh.read()
 
 setup(name='svist4get',
-      version='1.2.3',
+      version='1.3',
       description='A simple visualization tool for genomic tracks from sequencing experiments',
       url='https://github.com/art-egorov/svist4get',
       author='Artyom Egorov',
