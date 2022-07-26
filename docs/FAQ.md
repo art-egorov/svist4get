@@ -19,8 +19,8 @@
 
  *A:* Please add `-debug` to the command line and post the details in [Issues](https://bitbucket.org/artegorov/svist4get/issues) or e-mail directly to _artyom**dot**egorov**AT**belozersky**dot**msu**dot**ru_.
 
----
-### [Main page](../README.md)
+
+### [Main page](https://github.com/art-egorov/svist4get)
 
 
 #### [Quickstart guide](./QSGUIDE.md)

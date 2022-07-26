@@ -1,10 +1,8 @@
 # Configuration file parameters
 
-___
 
 Svist4get configuration file allows detailed customization of the output images. Below, comments (*placed after ; in each line*) are allowed in configuration files. Here they are used to provide short parameter descriptions.
 
-___
 
 ### General options
 
@@ -21,7 +19,6 @@ __show_genomiс_axis_tics = 0__⠀⠀*;0 or 1, show or hide the genomic coordina
 __show_nt_seq_track = auto__⠀⠀*;can be 'auto' (show or hide track based on genomic window width), 1, or 0 (force show or hide).*  
 __transcript_label_style = auto__⠀⠀*;can be 'none' (hide the transcript label), 'name', 'id', 'gene_id' (show annotated transcript_name, transcript_id or gene_id respectively as a transcript_label), 'both' (show annotated transcript_name and transcript_id) and 'both' (hides name if it is included the ID)*
 
-___
 
 ### File paths
 
@@ -37,7 +34,6 @@ __;[FONT FILE PATHS]__
 __mono_font = fonts/iosevka-regular.ttf__⠀⠀*;default monotype font for nucleotide and aminoacid labels.*  
 __regular_font = fonts/Lato-Regular.ttf__⠀⠀*;default font for other labels.*
 
-___
 
 ### Image size and style customization
 
@@ -131,8 +127,7 @@ __c_regions_alpha = 0.55__
 
 
 
----
-### [Main page](../README.md)  
+### [Main page](https://github.com/art-egorov/svist4get)  
 #### [Quickstart guide](./QSGUIDE.md)  
 #### [Command-line parameters](./PARAMETERS.md)  
 #### [API usage examples](./API.md)  

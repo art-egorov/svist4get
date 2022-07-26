@@ -1,6 +1,5 @@
 # Quickstart guide
 
-___
 
 Here we present several examples of svist4get vizualizations and the respective command-line parameters. The examples are based on the yeast sample data from [GWIPs](https://gwips.ucc.ie/cgi-bin/hgTrackUi?hgsid=70860_dNAywxoBvAFoARLEit7wULCJbfKz&c=chrI&g=Albert14_RiboProElong), the necessary data samples as well as the yeast genome annotation from [Ensembl](https://www.ensembl.org/Saccharomyces_cerevisiae/Info/Index) are provided by svist4get at the post-install step:
 
@@ -8,7 +7,6 @@ Here we present several examples of svist4get vizualizations and the respective 
 svist4get -sampledata
 ```
 
----
 ## Transcript-centric visualization
 
 ###### Simple example with minimal agruments
@@ -32,7 +30,6 @@ svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.d
 <img src="figs/2.png" width="400px">
 
 
----
 
 ## Visualization anchored at the translation initiation site
 
@@ -44,7 +41,6 @@ svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.d
 <img src="figs/3.png" width="700px">
 
 
----
 ## Gene-centric selection of a genomic window
 
 ```
@@ -53,7 +49,7 @@ svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.d
 
 <img src="figs/4.png" width="400px">
 
----
+
 ## An arbitrary genomic window
 
 ```
@@ -62,7 +58,7 @@ svist4get -gtf svist4get_data/S.cerevisiae.gtf -fa svist4get_data/S.cerevisiae.d
 
 <img src="figs/5.png" width="400px">
 
----
+
 ## Usage of paired bedGraph tracks
 
 
@@ -72,15 +68,12 @@ svist4get -gtf svist4get_data/MATa.gtf -fa svist4get_data/MATa.fasta -pbg svist4
 
 <img src="figs/6.png" width="400px">
 
-___
 
 **Note**: the displayed range of bedGraph signal values (Y axis) depends on the genomic window width, due to the profile smoothing procedure that, by default, aggregates and averages values for each displayed 'bar'. Processing is not used for small genomic windows that allow bedGraph tracks to be plotted in single-nucleotide resolution. Alternative processing functions are possible: min, max, median, or none (displays raw data). The function can be set using `-bgb` command line or 'bedgraph_bar' config parameters, see also the detailed help pages.
 
 
 
-
----
-### [Main page](../README.md)
+### [Main page](https://github.com/art-egorov/svist4get)
 
 
 

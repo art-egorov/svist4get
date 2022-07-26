@@ -1,6 +1,5 @@
 # Version log
 
-___
 * **Ver 1.2.3 - 26 July 2022** Minor bugs (e.g. overlapping bedgraph tics' labels and top lines) were fixed. Several default config parameters were changed (e.g. no grid lines by default [see *c_vgrid_alpha* config parameter]). A new home page of this project was changed to github.  
 
 * Ver 1.2.24 - 28 July 2020 Fixed the bug with visualization unstranded  transcripts.
@@ -49,7 +48,7 @@ ___
 
 
 ---
-### [Main page](../README.md)
+### [Main page](https://github.com/art-egorov/svist4get)
 
 
 #### [Quickstart guide](./QSGUIDE.md)

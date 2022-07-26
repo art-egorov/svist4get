@@ -1,6 +1,5 @@
 # API usage examples
 
-___
 Short example-drived guide to svist4get API 
 Svist4get has a simple API allowing it programmatic usage from within a Python program. Below we descrive several Python snippets that mimic results of [command-line calls](QSGUIDE.md).
 
@@ -10,7 +9,6 @@ Here we present several examples of svist4get vizualizations and the respective 
 `svist4get -sampledata`
 
 
----
 ## Transcript-centric visualization
 
 
@@ -59,7 +57,6 @@ sv4g.methods.pdf_page_to_png(pa)
 <img src="figs/2.png" width="400px">
 
 
----
 
 ## Visualization anchored at the translation initiation site
 
@@ -113,7 +110,6 @@ sv4g.methods.pdf_page_to_png(pa)
 
 <img src="figs/3.png" width="700px">
 
----
 ## Gene-centric selection of a genomic window
 
 ```python
@@ -163,7 +159,7 @@ sv4g.methods.pdf_page_to_png(pa)
 
 <img src="figs/4.png" width="400px">
 
----
+
 ## An arbitrary genomic window
 
 ```python
@@ -212,7 +208,6 @@ sv4g.methods.pdf_page_to_png(pa)
 <img src="figs/5.png" width="400px">
 
 
----
 
 ## Usage of paired bedGraph tracks
 

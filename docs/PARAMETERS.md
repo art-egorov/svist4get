@@ -1,14 +1,12 @@
 # Сommand-line parameters
 
-___
-
+	
 **POST-INSTALL EXAMPLE DATA**
 
 - `--sampledata`  
 Creates the 'svist4get' folder in the current working directory.
 The folder will contain sample data sets and adjustable configuration file templates.
 
-___
 
 **MANDATORY ARGUMENTS**
 
@@ -43,7 +41,6 @@ NOTE: fai index file will be generated automatically.
 - `-gtf` <file.gtf>  
 Path to the gtf file with the transcript annotation.
 
-___
 
 **OPTIONAL ARGUMENTS**
 
@@ -156,7 +153,6 @@ Transcript label style. Can be 'none' (hide the transcript label), 'name', 'id' 
 - `-hrf` <N>  
 Highlight a particular reading frame (+0, +1 or +2).
 
-___
 
 **MISCELLANEOUS ARGUMENTS**
 
@@ -181,8 +177,7 @@ Highlight selected codon on the aminoacid sequence track, e.g. -hc TGA.
 
 
 
----
-### [Main page](../README.md)
+### [Main page](https://github.com/art-egorov/svist4get)
 
 
 #### [Quickstart guide](./QSGUIDE.md)
