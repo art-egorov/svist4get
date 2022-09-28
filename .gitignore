@@ -1,0 +1,4 @@
+# MkDocs generates site ant templates #
+.*
+!/.gitignore
+__pycache__
