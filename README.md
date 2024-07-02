@@ -14,7 +14,7 @@ Svist4get is a simple bioinformatics tool for visualization of genomic signal tr
 **Python dependencies:** reportlab, statistics, biopython, configs, wand, argparse, pybedtools  
 **OS-level dependencies:** bedtools, ImageMagick (pdf-to-png conversion)  
 **License:** [WTFPL](http://www.wtfpl.net)  
-**Version:** 1.3 (July 2022)
+**Version:** 1.3.1 (July 2024)
 
 **Note:** It's a new project's home page. It was moved from [bitbucket: artegorov/svist4get](https://bitbucket.org/artegorov/svist4get/src/master/). All new releases (starting with v. 1.3) of svist4get will be published only on this page (and pypi). 
 
@@ -34,12 +34,12 @@ python3 -m pip install svist4get
 - The development version is available at github :
 
 ```
-git clone https://artegorov@bitbucket.org/artegorov/svist4get.git
+git clone https://github.com/art-egorov/svist4get.git
 cd svist4get
 python3 -m pip install --upgrade pip
 python3 -m pip install wheel
 python3 setup.py sdist bdist_wheel
-python3 -m pip install -e .
+python3 -m pip install .
 ```
 
 
@@ -97,7 +97,6 @@ Artyom A. Egorov, Ekaterina A. Sakharova, Aleksandra S. Anisimova, Sergey E. Dmi
 
 
 
-
 ## Authors
 
 svist4get is developed by Artyom Egorov at the Laboratory of Systems Biology of Aging, MSU (Current address: [The Atkinson Lab](https://atkinson-lab.com), Department of Experimental Medical Science, Lund University). We are open for suggestions to extend and improve svist4get functionality. Please don't hesitate to share your ideas or feature requests.
@@ -106,8 +105,7 @@ svist4get is developed by Artyom Egorov at the Laboratory of Systems Biology of 
 
 
 
-
 ## Applications/Citations 
 
-More than 20 citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=8975441885381696257).
+More than 30 citations according to [Google Scholar](https://scholar.google.com/scholar?oi=bibs&hl=en&authuser=1&cites=8975441885381696257).
 

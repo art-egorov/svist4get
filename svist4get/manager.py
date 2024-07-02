@@ -50,7 +50,7 @@ class Parameters:
         parser.add_argument("--sampledata", "-sampledata", dest='data', action='store_true',
                             help='Creates the \'svist4get\' folder in the current working directory.The folder will contain sample data sets and adjustable configuration file templates.')
 
-        parser.add_argument("--version", "-v", action='version', version='%(prog)s 1.3',
+        parser.add_argument("--version", "-v", action='version', version='%(prog)s 1.3.1',
                             help='Show program version')
 
         parser.add_argument('-t', type=str, metavar='', dest='transcript_id', default=0,

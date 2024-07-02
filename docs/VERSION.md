@@ -1,6 +1,8 @@
 # Version log
 
-* **Ver 1.3 - 26 July 2022** Minor bugs (e.g. overlapping bedgraph tics' labels and top lines) were fixed. Several default config parameters were changed (e.g. no grid lines by default [see *c_vgrid_alpha* config parameter]). A home page of this project was changed to github.  
+* **Ver 1.3.1 - 2 July 2024** Minor changes of setup.py.
+
+* Ver 1.3 - 26 July 2022 Minor bugs (e.g. overlapping bedgraph tics' labels and top lines) were fixed. Several default config parameters were changed (e.g. no grid lines by default [see *c_vgrid_alpha* config parameter]). A home page of this project was changed to github.  
 
 * Ver 1.2.24 - 28 July 2020 Fixed the bug with visualization unstranded  transcripts.
 
